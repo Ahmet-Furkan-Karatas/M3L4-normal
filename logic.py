@@ -59,7 +59,9 @@ class DB_Manager:
         self.__executemany(sql, data)  
 
     def insert_project(self, data):  
-        sql = """INSERT INTO projects (user_id, project_name, url, status_id) values(?, ?, ?, ?, ?)"""        
+        sql = """INSERT INTO projects 
+        (user_id, project_name, url, status_id) 
+        values(?, ?, ?, ?)"""        
         self.__executemany(sql, data)  
 
     def insert_skill(self, user_id, project_name, skill):  

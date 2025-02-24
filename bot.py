@@ -3,7 +3,6 @@ import discord
 from discord.ext import commands
 from logic import DB_Manager
 from config import DATABASE, TOKEN
-from modal import TestButton, TestModal, TestView
 
 # Discord izinlerini vermek 👇
 intents = discord.Intents.default()
